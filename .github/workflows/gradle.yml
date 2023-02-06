@@ -58,5 +58,5 @@ jobs:
       run: >
         aws deploy create-deployment --application-name be-17-kms310272
         --deployment-config-name CodeDeployDefault.AllAtOnce
-        --deployment-group-name be-17-kms310272
+        --deployment-group-name be-17-kms310272-group
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-deploy.zip
